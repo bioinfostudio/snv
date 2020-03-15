@@ -1,0 +1,23 @@
+chunks:
+
+-
+    title: "Welcome to Single Nucleotide Variant Call"
+    id: welcome
+    rules:
+    -
+        weight: 100
+
+    -
+        weight: 0
+
+    content: |
+
+        # Single Nucleotide Variant Call
+
+        - Prepare raw BAM alignments for variant detection
+        - Perform QC measures on BAM files
+        - Perform simple variant detection on paired NGS data
+        - Add annotation information to raw variant calls
+        - Visualise variant calls using IGV
+
+        <i class="fab fa-creative-commons"></i> / by BPA and CSIRO

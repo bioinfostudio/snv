@@ -1,0 +1,204 @@
+title: "BAM files"
+description: |
+
+    # BAM files
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+
+    grade_identifier: alignment 
+    grade_aggregation_strategy: use_latest
+
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: snv
+    shuffle: False
+    pages:
+    -
+        type: TerminalQuestion
+        id: intro
+        cid: snv
+        title: Introduction
+        prompt: |
+
+            {% include "markdowns/01_introduction.md" %}
+    -
+        type: InlineMultiQuestion
+        id: flags 
+        cid: snv
+        value: 15
+        title: SAM flags
+        prompt: |
+
+            {% include "markdowns/02_exploring_bam.md" %}
+
+            There are 3 unique flags, what do they mean? The flag is the second column.
+
+        question: |
+
+          [[blank1]]
+          read paired  
+          second in pair  
+
+          [[blank2]]
+          read paired  
+          read reverse strand  
+          mate reverse strand  
+          first in pair  
+
+          [[blank3]]
+          read paired  
+          mate reverse strand  
+          second in pair  
+
+        answers:
+
+            blank1:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                correct_answer:
+                - <plain> 129 
+            blank2:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                correct_answer:
+                - <plain> 113
+            blank3:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                correct_answer:
+                - <plain> 161
+    -
+        type: InlineMultiQuestion
+        id: mate 
+        cid: snv 
+        value: 10
+        title: Find mate pair
+        prompt: |
+
+            There are lots of possible different flags, let’s look at a few more
+
+                samtools view alignment/normal/normal.sorted.bam | head -n 100
+
+            Let’s take the last read, which looks properly paired and find
+            its mate pair.
+
+        question: |
+
+            samtools view alignment/normal/normal.sorted.bam | [[blank1]] HWI-ST478_0133:4:2205:14675:32513
+
+        answers:
+
+            blank1:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                hint: |
+                    a)  Instead of using `head`, what unix command could we pipe the output to?
+                    b)  Once we’ve found both reads, the command can be stopped by typing `CTRL-C`  
+                correct_answer:
+                - <plain> grep
+    -
+        type: InlineMultiQuestion
+        id: cigar 
+        cid: snv 
+        value: 10
+        title: The cigar string 
+        prompt: |
+
+            Using the cigar string, what can we tell about the alignment of the mate pair?
+
+        question: |
+
+            samtools view alignment/normal/normal.sorted.bam |  HWI-ST478_0133:4:2205:14675:32513
+            The mate pair has a less convincing alignment with two insertions and
+            [[choice1]] clipping reported.
+
+        answers:
+            choice1:
+                type: ChoicesAnswer
+                choices:
+                - ~CORRECT~ soft
+                - hard
+    -
+        type: InlineMultiQuestion
+        id: aligner 
+        cid: snv 
+        value: 10
+        title: The alignment information
+        prompt: |
+
+            How might the alignment information from the original read be used by the aligner?
+
+        question: |
+
+            Even though the alignment of the mate pair is questionable the presence
+            of it’s properly paired mate helps the aligner in deciding where to put
+            the [[choice1]] certain read.
+
+        answers:
+
+            choice1:
+                type: ChoicesAnswer
+                choices:
+                - ~CORRECT~ less
+                - more
+    -
+        type: InlineMultiQuestion
+        id: samtools
+        cid: snv 
+        value: 10
+        title: Mapped and unmapped reads 
+        prompt: |
+
+            You can use `Samtools` to filter reads as well.
+
+            How many reads mapped and unmapped were there?
+
+        question: |
+
+            Mapped: [[blank1]]
+
+            Unmapped: [[blank2]]
+
+        answers:
+
+            blank1:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                hint: Look at the samtools view help menu by typing `samtools view` without any arguments
+                correct_answer:
+                - <plain> 22972373
+             blank2:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                hint: Look at the samtools view help menu by typing `samtools view` without any arguments
+                correct_answer:
+                - <plain> 77229
+
+        answer_explanation: |
+
+            - Mapped `samtools view -c -F4 alignment/normal/normal.sorted.bam`
+            - Unmapped `samtools view -c -f4 alignment/normal/normal.sorted.bam`
