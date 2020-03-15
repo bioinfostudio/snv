@@ -190,7 +190,7 @@ groups:
                 hint: Look at the samtools view help menu by typing `samtools view` without any arguments
                 correct_answer:
                 - <plain> 22972373
-             blank2:
+            blank2:
                 type: ShortAnswer
                 width: 4em
                 required: True
