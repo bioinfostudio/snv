@@ -17,8 +17,7 @@ RUN conda install ensembl-vep
 
 ## create a non-root user
 RUN useradd -ms /bin/bash bioinfo
-WORKDIR /home/bioinfo/snv
-RUN ln -s /mnt/genome/snv /home/bioinfo/snv/
+RUN ln -s /mnt/genome/snv /home/bioinfo/snv
 # setup the user directory
 RUN chown -R bioinfo:bioinfo /home/bioinfo
 RUN echo 'export PS1=" \W\$ "' >> /home/bioinfo/.bashrc
