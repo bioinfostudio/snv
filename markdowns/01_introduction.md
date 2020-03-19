@@ -54,10 +54,10 @@ genomics on full genomes!
 The initial structure of your folders should look like this (type `ls -l`):
 
 ```
--- alignment/       # bam files
-  -- normal/        # The blood sample directory containing bam files
-  -- tumour/        # The tumour sample directory containing bam files
--- ref/             # Contains reference genome files
+-- alignment/ # bam files
+  -- normal/   # The blood sample directory containing bam files
+  -- tumour/  # The tumour sample directory containing bam files
+-- ref/          # Contains reference genome files
 ```
 
 Make sure you are in the correct directory by typing:

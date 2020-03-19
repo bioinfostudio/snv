@@ -1,0 +1,192 @@
+title: "Pre-processing"
+description: |
+
+    # Create analysis ready BAM 
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+
+    grade_identifier: bam_post 
+    grade_aggregation_strategy: use_latest
+
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: picard 
+    shuffle: False
+    pages:
+    -
+        type: TerminalQuestion
+        id: intro
+        cid: snv
+        title: FixMates 
+        prompt: |
+
+            {% include "markdowns/03_fixmates.md" %}
+    -
+        type: InlineMultiQuestion
+        id: mark
+        cid: fixmates
+        value: 10
+        title: Duplicates reads
+        prompt: |
+
+            # What are duplicate reads?
+
+        question: |
+
+            [[choice1]] read pairs representing the [[choice2]] initial DNA fragment.
+
+        answers:
+
+            choice1:
+                type: ChoicesAnswer
+                choices:
+                - ~CORRECT~ different
+                - same
+
+            choice2:
+                type: ChoicesAnswer
+                choices:
+                - different
+                - ~CORRECT~ same
+    -
+        type: InlineMultiQuestion
+        id: cause
+        cid: fixmates
+        value: 10
+        title: Duplicates cause 
+        prompt: |
+
+            # What are they caused by?
+
+        question: |
+
+            [[blank1]] duplicates
+
+            Some clusters that are thought of being separate in the flowcell but are the same ([[blank2]] duplicates)
+
+        answers:
+
+            blank1:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                correct_answer:
+                - <plain> PCR
+
+            blank2:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                correct_answer:
+                - <plain> optical
+    -
+        type: InlineMultiQuestion
+        id: detect
+        cid: fixmates
+        value: 5
+        title: Duplicates detection 
+        prompt: |
+
+            # What are the ways to detect them?
+
+        question: |
+
+            1. Picard and samtools uses the alignment positions
+
+                Both 5’ ends of both reads need to have the same positions.
+
+                Each reads have to be on the same [[blank1]] as well.
+
+            2. Another method is to use a kmer approach
+
+                Take a part of both ends of the fragment.
+
+                Build a hash table.
+
+                Count the similar hits.
+
+            3. Brute force, compare all the sequences
+
+        answers:
+            blank1:
+                type: ShortAnswer
+                width: 4em
+                required: True
+                correct_answer:
+                - <plain> strand
+    -
+        type: InlineMultiQuestion
+        id: duplicates
+        cid: fixmates
+        value: 15
+        title: Mark Duplicates
+        prompt: |
+
+            {% include "markdowns/04_mark_duplicates.md" %}
+
+        question: |
+
+            What percent of reads are duplicates? [[blank1]]
+
+            Often, we have multiple libraries and when this occurs separate measures
+            are calculated for each library. Why is it important to not combine everything?
+
+            Each library represents a set of [[choice1]] DNA fragments.
+
+            Each library involves [[choice2]] PCR reactions
+
+        answers:
+
+            blank1:
+                type: ShortAnswer
+                width: 8em
+                appended_text: "%"
+                required: True
+                correct_answer:
+                - type: float
+                  value: 0.042612
+                  rtol: 0.000001
+                - <plain> "0.042612"
+ 
+            choice1:
+                type: ChoicesAnswer
+                choices:
+                - ~CORRECT~ different
+                - same
+
+            choice2:
+                type: ChoicesAnswer
+                choices:
+                - ~CORRECT~ different
+                - same
+
+        answer_explanation: |
+            PCR duplicates can not occur between fragments of two different
+            libraries. However, similar fragments could be found between
+            libraries when the coverage is high.
+    -
+        type: TerminalQuestion
+        id: bqsr
+        cid: markdup
+        title: Base Quality Recalibration 
+        prompt: |
+
+            {% include "markdowns/05_base_quality_recalibration.md" %}

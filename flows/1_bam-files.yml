@@ -118,10 +118,6 @@ groups:
 
             # Using the cigar string, what can we tell about the alignment of the mate pair?
 
-            ```bash
-            samtools view alignment/normal/normal.sorted.bam |  HWI-ST478_0133:4:2205:14675:32513
-            ```
-
         question: |
 
             The mate pair has a less convincing alignment with two insertions and
