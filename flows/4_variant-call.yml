@@ -1,0 +1,65 @@
+title: "Variant Calling"
+description: |
+
+    # Variant Calling
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 4
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
+
+    grade_identifier: variant_call
+    grade_aggregation_strategy: use_latest
+
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: bamqc
+    shuffle: False
+    pages:
+    -
+        type: TerminalQuestion
+        id: variantcaller
+        cid: alignment-metrics
+        title: Variant Calling 
+        prompt: |
+
+            {% include "markdowns/09_variant_calling.md" %}
+    -
+        type: TerminalQuestion
+        id: comparing
+        cid: variantcall
+        title: Comparing variant callers 
+        prompt: |
+
+            {% include "markdowns/10_comparing_variant_callers.md" %}
+    -
+        type: TerminalQuestion
+        id: variantviz
+        cid: igvtools
+        title: Vairiant Visualisation
+        prompt: |
+
+            {% include "markdowns/11_variant_visualisation.md" %}
+    -
+        type: TerminalQuestion
+        id: vep
+        cid: variant-igv
+        title: Vairiant Annotation
+        prompt: |
+
+            {% include "markdowns/12_variant_annotation.md" %}

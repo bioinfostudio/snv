@@ -13,9 +13,8 @@ RUN curl -LO https://github.com/Illumina/strelka/releases/download/v2.9.10/strel
 
 RUN wget -O /usr/local/bin/VarScan.jar https://github.com/dkoboldt/varscan/releases/download/2.4.2/VarScan.v2.4.2.jar
 RUN conda config --add channels bioconda
-RUN conda install ensembl-vep
 
-## create a non-root user
+# create a non-root user
 RUN useradd -ms /bin/bash bioinfo
 WORKDIR /home/bioinfo/snv/alignment/normal
 WORKDIR /home/bioinfo/snv/alignment/tumour

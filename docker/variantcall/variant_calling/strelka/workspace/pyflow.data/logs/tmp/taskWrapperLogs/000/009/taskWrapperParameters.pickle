@@ -1,0 +1,26 @@
+(dp0
+S'isShellCmd'
+p1
+I01
+sS'cmd'
+p2
+S'"/usr/bin/python2" -E "/usr/local/libexec/vcfCmdlineSwapper.py" "/usr/local/bin/configureStrelkaSomaticWorkflow.py --normalBam alignment/normal/normal.sorted.dup.recal.bam --tumorBam alignment/tumour/tumour.sorted.dup.recal.bam --referenceFasta ref/human_g1k_v37.fasta --runDir variant_calling/strelka/ --callRegions ref/callable.bed.gz" < "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_003_4_0000.vcf" > "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_003_4_0000.vcf.reheader.tmp" && mv "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_003_4_0000.vcf.reheader.tmp" "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_003_4_0000.vcf" && "/usr/bin/python2" -E "/usr/local/libexec/vcfCmdlineSwapper.py" "/usr/local/bin/configureStrelkaSomaticWorkflow.py --normalBam alignment/normal/normal.sorted.dup.recal.bam --tumorBam alignment/tumour/tumour.sorted.dup.recal.bam --referenceFasta ref/human_g1k_v37.fasta --runDir variant_calling/strelka/ --callRegions ref/callable.bed.gz" < "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.indels.unfiltered.chromId_003_4_0000.vcf" > "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.indels.unfiltered.chromId_003_4_0000.vcf.reheader.tmp" && mv "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.indels.unfiltered.chromId_003_4_0000.vcf.reheader.tmp" "/home/bioinfo/snv/variant_calling/strelka/workspace/genomeSegment.tmpdir/somatic.indels.unfiltered.chromId_003_4_0000.vcf"'
+p3
+sS'errFile'
+p4
+S'/home/bioinfo/snv/variant_calling/strelka/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p5
+sS'outFile'
+p6
+S'/home/bioinfo/snv/variant_calling/strelka/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p7
+sS'env'
+p8
+NsS'nCores'
+p9
+I1
+sS'cwd'
+p10
+S''
+p11
+s.

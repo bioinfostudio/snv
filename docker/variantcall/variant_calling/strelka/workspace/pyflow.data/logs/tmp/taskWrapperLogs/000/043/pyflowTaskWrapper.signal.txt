@@ -1,0 +1,4 @@
+[2020-03-20T13:17:32.102233Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] wrapperStart
+[2020-03-20T13:17:32.108426Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskStart
+[2020-03-20T13:17:32.112781Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskExitCode 0
+[2020-03-20T13:17:32.115998Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskElapsedSec 0
