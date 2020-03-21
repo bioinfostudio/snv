@@ -49,15 +49,13 @@ file but with added annotations in the INFO block. `VEP` also produces an
 HTML report summarising the distribution and impact of variants
 identified.
 
-Once `VEP` is done running, let’s first look at the HTML report it
-produced with the following command:
+Once `VEP` is done running, let’s first look at the HTML report:
 
 - [HC.chr5.60Mb.vep.html](http://storage.googleapis.com/bioinfostudio/snv/variants/HC.chr5.60Mb.vep.html){:target="_blank"}
 
 This report shows information on the `VEP` run, the number of variants,
 the classes of variants detected, the variant consequences and the
-distributions of variants through the genome. Close Firefox to resume
-the terminal prompt.
+distributions of variants through the genome.
 
 Now let’s look at the variant annotations that `VEP` has added to the VCF
 file by focussing on a single variant. Let’s fetch the same variant from
@@ -73,12 +71,12 @@ These commands give us the original variant:
 
 and the same variant annotated is:
 
-    5   174106  .   G   A   225.44  .   AC=2;AF=0.500;AN=4;BaseQRankSum=1.22;ClippingRankSum=0.811;DP=21;FS=0.000;GQ_MEAN=127.00;GQ_STDDEV=62.23;MLEAC=2;MLEAF=0.500;MQ=60.00;MQ0=0;MQRankSum=0.322;NCC=0;QD=10.74;ReadPosRankSum=0.377;SOR=0.446;CSQ=missense_variant|cGg/cAg|R/Q|ENSG00000153404|PLEKHG4B|ENST00000283426|16/18|||1076|protein_coding,non_coding_transcript_exon_variant&non_coding_transcript_variant|||ENSG00000153404|PLEKHG4B|ENST00000504041|5/8||||retained_intron  GT:AD:DP:GQ:PL  0/1:7,6:13:99:171,0,208 0/1:5,3:8:83:83,0,145
+    5   174106  .   G   A   225.44  .   AC=2;AF=0.500;AN=4;BaseQRankSum=1.22;ClippingRankSum=0.811;DP=21;FS=0.000;GQ_MEAN=127.00;GQ_STDDEV=62.23;MLEAC=2;MLEAF=0.500;MQ=60.00;MQ0=0;MQRankSum=0.322;NCC=0;QD=10.74;ReadPosRankSum=0.377;SOR=0.446;CSQ=missense_variant|cGg/cAg|R/Q|ENSG00000153404|PLEKHG4B|ENST00000283426|16/18|||1076|protein_coding,non_coding_transcript_exon_variant|||ENSG00000153404|PLEKHG4B|ENST00000504041|5/8||||retained_intron  GT:AD:DP:GQ:PL  0/1:7,6:13:99:171,0,208 0/1:5,3:8:83:83,0,145
 
 You can see that `VEP` has added:
 
 ```
-CSQ=missense_variant|cGg/cAg|R/Q|ENSG00000153404|PLEKHG4B|ENST00000283426|16/18|||1076|protein_coding,non_coding_transcript_exon_variant&non_coding_transcript_variant|||ENSG00000153404|PLEKHG4B|ENST00000504041|5/8||||retained_intron
+CSQ=missense_variant|cGg/cAg|R/Q|ENSG00000153404|PLEKHG4B|ENST00000283426|16/18|||1076|protein_coding,non_coding_transcript_exon_variant|||ENSG00000153404|PLEKHG4B|ENST00000504041|5/8||||retained_intron
 ```
 
 This is further composed of two annotations for this variant:
@@ -90,7 +88,7 @@ missense_variant|cGg/cAg|R/Q|ENSG00000153404|PLEKHG4B|ENST00000283426|16/18|||10
 and
 
 ```
-non_coding_transcript_exon_variant&non_coding_transcript_variant|||ENSG00000153404|PLEKHG4B|ENST00000504041|5/8||||retained_intron
+non_coding_transcript_exon_variant|||ENSG00000153404|PLEKHG4B|ENST00000504041|5/8||||retained_intron
 ```
 
 The first of these is saying that this variant is a missense variant in
