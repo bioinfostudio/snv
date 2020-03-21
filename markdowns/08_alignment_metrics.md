@@ -10,7 +10,8 @@ Instead, we will use `CollectAlignmentSummaryMetrics (Picard)` to compute the me
 ```bash
 for i in normal tumour
 do
-    gatk CollectAlignmentSummaryMetrics \
+    gatk --java-options "-Xmx1G" \
+    CollectAlignmentSummaryMetrics \
     --VALIDATION_STRINGENCY=SILENT \
     --REFERENCE_SEQUENCE=ref/human_g1k_v37.fasta \
     --INPUT=alignment/${i}/${i}.sorted.dup.recal.bam \

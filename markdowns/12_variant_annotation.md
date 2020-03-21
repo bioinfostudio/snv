@@ -52,7 +52,7 @@ identified.
 Once `VEP` is done running, let’s first look at the HTML report it
 produced with the following command:
 
-    variants/HC.chr5.60Mb.vep.html
+- [HC.chr5.60Mb.vep.html](http://storage.googleapis.com/bioinfostudio/snv/variants/HC.chr5.60Mb.vep.html){:target="_blank"}
 
 This report shows information on the `VEP` run, the number of variants,
 the classes of variants detected, the variant consequences and the

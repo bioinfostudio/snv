@@ -8,7 +8,8 @@ These metrics are computed using `CollectInsertSizeMetrics (Picard)`:
 ```bash
 for i in normal tumour
 do
-    gatk CollectInsertSizeMetrics \
+    gatk --java-options "-Xmx1G" \
+    CollectInsertSizeMetrics \
     --VALIDATION_STRINGENCY=SILENT \
     --REFERENCE_SEQUENCE=ref/human_g1k_v37.fasta \
     --INPUT=alignment/${i}/${i}.sorted.dup.recal.bam \

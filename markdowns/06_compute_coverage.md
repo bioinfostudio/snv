@@ -20,9 +20,9 @@ done
 
 Explanation of parameters:
 
-  > **-\-by**: Optional BED file or (integer) window-sizes.
-  > **-\-no-per-base**: Do not output depth of coverage at each base  
-  > **-\-threshold**: For each interval in --by, write number of bases covered by at least threshold bases
+> **-\-by**: Optional BED file or (integer) window-sizes
+> **-\-no-per-base**: Do not output depth of coverage at each base
+> **-\-threshold**: For each interval in --by, write number of bases covered by at least threshold bases
 
 In this project, coverage is expected to be 85x. Look at the coverage:
 
