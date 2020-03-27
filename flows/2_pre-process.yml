@@ -47,7 +47,9 @@ groups:
         title: Duplicates reads
         prompt: |
 
-            # What are duplicate reads?
+            # Pre-processing: Mark Duplicates
+
+            What are duplicate reads?
 
         question: |
 
@@ -74,7 +76,9 @@ groups:
         title: Duplicates cause 
         prompt: |
 
-            # What are they caused by?
+            # Pre-processing: Mark Duplicates
+
+            What are they caused by?
 
         question: |
 
@@ -93,7 +97,7 @@ groups:
 
             blank2:
                 type: ShortAnswer
-                width: 4em
+                width: 5em
                 required: True
                 correct_answer:
                 - <plain> optical
@@ -105,7 +109,9 @@ groups:
         title: Duplicates detection 
         prompt: |
 
-            # What are the ways to detect them?
+            # Pre-processing: Mark Duplicates
+
+            What are the ways to detect them?
 
         question: |
 
@@ -128,7 +134,7 @@ groups:
         answers:
             blank1:
                 type: ShortAnswer
-                width: 4em
+                width: 5em
                 required: True
                 correct_answer:
                 - <plain> strand
@@ -144,14 +150,15 @@ groups:
 
         question: |
 
-            What percent of reads are duplicates? [[blank1]]
+            1. What percent of reads are duplicates?
+            
+                [[blank1]]
 
-            Often, we have multiple libraries and when this occurs separate measures
-            are calculated for each library. Why is it important to not combine everything?
+            2. Often, we have multiple libraries and when this occurs separate measures are calculated for each library. Why is it important to not combine everything?
 
-            Each library represents a set of [[choice1]] DNA fragments.
+                Each library represents a set of [[choice1]] DNA fragments.
 
-            Each library involves [[choice2]] PCR reactions
+                Each library involves [[choice2]] PCR reactions
 
         answers:
 
@@ -179,6 +186,7 @@ groups:
                 - same
 
         answer_explanation: |
+
             PCR duplicates can not occur between fragments of two different
             libraries. However, similar fragments could be found between
             libraries when the coverage is high.
