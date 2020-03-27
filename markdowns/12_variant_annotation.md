@@ -10,7 +10,7 @@ premature stop codon gain or are they likely less harmful missense
 mutations).
 
 The sections above have dealt with calling somatic variants from the
-first 10Mb of chromosome 4. This is important in finding variants that
+first 0.1Mb of chromosome 4. This is important in finding variants that
 are unique to the tumour sample(s) and may have driven both tumour
 growth and/or metastasis. An important secondary question is whether the
 germline genome of the patient contains any variants that may have
@@ -26,7 +26,7 @@ was GVCF files which were fed into GATK `GenotypeGVCFs` to produce a
 merged VCF file. We will use this pre-generated file as we are primarily
 interested in the annotation of variants rather than their generation.
 The annotation method we will use is called `Variant Effect Predictor`
-or `VEP` for short and is available from Ensembl [here](http://ensembl.org/info/docs/tools/vep/index.html).
+or `VEP` for short and is available from Ensembl [here](https://www.ensembl.org/vep).
 
 Our pre-generated VCF file is located in the `variants` folder. Let’s
 have a quick look at the variants:

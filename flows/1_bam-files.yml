@@ -53,9 +53,11 @@ groups:
 
         question: |
 
-            - 129 [[choice1]]
-            - 113 [[choice2]]
-            - 161 [[choice3]]
+            129: [[choice1]]
+
+            113: [[choice2]]
+
+            161: [[choice3]]
 
         answers:
 
@@ -87,6 +89,8 @@ groups:
         title: Find mate pair
         prompt: |
 
+            # Find mate pair
+
             There are lots of possible different flags, let’s look at a few more
 
                 samtools view alignment/normal/normal.sorted.bam | head -n 100
@@ -113,10 +117,12 @@ groups:
         id: cigar 
         cid: snv 
         value: 10
-        title: The cigar string 
+        title: CIGAR string 
         prompt: |
 
-            # Using the cigar string, what can we tell about the alignment of the mate pair?
+            # CIGAR string
+
+             Using the cigar string, what can we tell about the alignment of the mate pair?
 
         question: |
 
@@ -134,10 +140,12 @@ groups:
         id: aligner 
         cid: snv 
         value: 10
-        title: The alignment information
+        title: Alignment information
         prompt: |
 
-            # How might the alignment information from the original read be used by the aligner?
+            # Alignment information
+
+            How might the alignment information from the original read be used by the aligner?
 
         question: |
 
@@ -160,14 +168,17 @@ groups:
         title: Mapped and unmapped reads 
         prompt: |
 
-            # How many reads mapped and unmapped were there?
+            # Mapped and unmapped reads
+
+            How many reads mapped and unmapped were there?
 
             You can use **samtools** to filter reads as well.
 
         question: |
 
-            - Mapped: [[blank1]]
-            - Unmapped: [[blank2]]
+            Mapped: [[blank1]]
+
+            Unmapped: [[blank2]]
 
         answers:
 
@@ -177,14 +188,14 @@ groups:
                 required: True
                 hint: Look at the samtools view help menu by typing <b>samtools view</b> without any arguments
                 correct_answer:
-                - <plain> 22972373
+                - <plain> 339078
             blank2:
                 type: ShortAnswer
                 width: 10em
                 required: True
                 hint: Look at the samtools view help menu by typing <b>samtools view</b> without any arguments
                 correct_answer:
-                - <plain> 77229
+                - <plain> 1333
 
         answer_explanation: |
 
