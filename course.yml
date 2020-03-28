@@ -12,7 +12,7 @@ chunks:
 
     content: |
 
-        # Single Nucleotide Variant Call
+        # Single Nucleotide Variant Calling
 
         - Prepare raw BAM alignments for variant detection
         - Perform QC measures on BAM files
