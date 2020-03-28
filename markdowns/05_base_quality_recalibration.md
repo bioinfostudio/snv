@@ -11,7 +11,8 @@ Base Quality Recalibration runs in 2 steps:
 1. Build covariates based on context and known SNP sites.
 2. Correct the reads based on these metrics.
 
-GATK BaseRecalibrator:
+
+Here we will use GATK's `BaseRecalibrator` and `ApplyBQSR`:
 
 ```bash
 for i in normal tumour
