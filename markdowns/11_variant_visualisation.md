@@ -17,12 +17,11 @@ do
 done
 ```
 
-!!! note ""
-    Explore and play with the data:
+Explore and play with the data:
 
-    - Find germline variants
-    - Find somatic variants
-    - Look around...
+- Find germline variants
+- Find somatic variants
+- Look around...
 
 <div id="igv-div"></div>
 
@@ -58,17 +57,10 @@ done
                 type: "variant",
                 format: "vcf",
                 name: "mutect",
-                url: "gs://bioinfostudio/snv/variant_calling/mutect.vcf.gz",
-                indexed: "gs://bioinfostudio/snv/variant_calling/mutect.vcf.gz.tbi",
+                url: "gs://bioinfostudio/snv/variant_calling/mutect.filtered.vcf.gz",
+                indexed: "gs://bioinfostudio/snv/variant_calling/mutect.filtered.vcf.gz.tbi",
             },
-            {
-                type: "variant",
-                format: "vcf",
-                name: "strelka",
-                url: "gs://bioinfostudio/snv/variant_calling/strelka.vcf.gz",
-                indexed: "gs://bioinfostudio/snv/variant_calling/strelka.vcf.gz.tbi",
-            },
-       ]
+        ]
     };
     igv.createBrowser(igvDiv, options)
 </script>

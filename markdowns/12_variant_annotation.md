@@ -31,7 +31,7 @@ or `VEP` for short and is available from Ensembl [here](https://www.ensembl.org/
 Our pre-generated VCF file is located in the `variants` folder. Let’s
 have a quick look at the variants:
 
-    zless variants/HC.chr5.60Mb.vcf.gz
+    zless -S variants/HC.chr5.60Mb.vcf.gz
 
 Notice how there are two genotype blocks at the end of each line for the
 normal (`Blood`) and tumour (`liverMets`) samples.

@@ -1,0 +1,49 @@
+#taskLabel	taskNamespace	runState	errorCode	runStateUpdateTime
+getChromDepth_makeTmpDir		complete	0	2020-03-20T13:17:26.602660Z
+getChromDepth_sample000_makeTmpDir		complete	0	2020-03-20T13:17:26.638317Z
+getChromDepth_sample000_estimateChromDepth_003_4		complete	0	2020-03-20T13:17:27.360545Z
+getChromDepth_sample000_catChromDepth		complete	0	2020-03-20T13:17:27.430104Z
+getChromDepth_mergeChromDepth		complete	0	2020-03-20T13:17:27.498123Z
+getChromDepth_removeTmpDir		complete	0	2020-03-20T13:17:27.555786Z
+CallGenome		complete	0	2020-03-20T13:17:33.247957Z
+makeTmpDir	CallGenome	complete	0	2020-03-20T13:17:27.572649Z
+callGenomeSegment_chromId_003_4_0000	CallGenome	complete	0	2020-03-20T13:17:31.880009Z
+fixVcfHeader_chromId_003_4_0000	CallGenome	complete	0	2020-03-20T13:17:31.949320Z
+compressSegmentOutput_chromId_003_4_0000	CallGenome	complete	0	2020-03-20T13:17:32.020044Z
+callGenomeSegment_chromId_003_4_0001	CallGenome	complete	0	2020-03-20T13:17:27.792955Z
+compressSegmentOutput_chromId_003_4_0001	CallGenome	complete	0	2020-03-20T13:17:27.945753Z
+callGenomeSegment_chromId_003_4_0002	CallGenome	complete	0	2020-03-20T13:17:28.447710Z
+compressSegmentOutput_chromId_003_4_0002	CallGenome	complete	0	2020-03-20T13:17:28.745537Z
+callGenomeSegment_chromId_003_4_0003	CallGenome	complete	0	2020-03-20T13:17:28.294911Z
+compressSegmentOutput_chromId_003_4_0003	CallGenome	complete	0	2020-03-20T13:17:28.371390Z
+callGenomeSegment_chromId_003_4_0004	CallGenome	complete	0	2020-03-20T13:17:27.786005Z
+compressSegmentOutput_chromId_003_4_0004	CallGenome	complete	0	2020-03-20T13:17:27.874540Z
+callGenomeSegment_chromId_003_4_0005	CallGenome	complete	0	2020-03-20T13:17:27.947168Z
+compressSegmentOutput_chromId_003_4_0005	CallGenome	complete	0	2020-03-20T13:17:28.032670Z
+callGenomeSegment_chromId_003_4_0006	CallGenome	complete	0	2020-03-20T13:17:28.161265Z
+compressSegmentOutput_chromId_003_4_0006	CallGenome	complete	0	2020-03-20T13:17:28.293733Z
+callGenomeSegment_chromId_003_4_0007	CallGenome	complete	0	2020-03-20T13:17:27.791247Z
+compressSegmentOutput_chromId_003_4_0007	CallGenome	complete	0	2020-03-20T13:17:27.873063Z
+callGenomeSegment_chromId_003_4_0008	CallGenome	complete	0	2020-03-20T13:17:27.789272Z
+compressSegmentOutput_chromId_003_4_0008	CallGenome	complete	0	2020-03-20T13:17:28.292303Z
+callGenomeSegment_chromId_003_4_0009	CallGenome	complete	0	2020-03-20T13:17:28.030950Z
+compressSegmentOutput_chromId_003_4_0009	CallGenome	complete	0	2020-03-20T13:17:28.589616Z
+callGenomeSegment_chromId_003_4_0010	CallGenome	complete	0	2020-03-20T13:17:28.515998Z
+compressSegmentOutput_chromId_003_4_0010	CallGenome	complete	0	2020-03-20T13:17:28.588351Z
+callGenomeSegment_chromId_003_4_0011	CallGenome	complete	0	2020-03-20T13:17:28.211042Z
+compressSegmentOutput_chromId_003_4_0011	CallGenome	complete	0	2020-03-20T13:17:28.372877Z
+callGenomeSegment_chromId_003_4_0012	CallGenome	complete	0	2020-03-20T13:17:28.596662Z
+compressSegmentOutput_chromId_003_4_0012	CallGenome	complete	0	2020-03-20T13:17:28.676980Z
+callGenomeSegment_chromId_003_4_0013	CallGenome	complete	0	2020-03-20T13:17:28.187180Z
+compressSegmentOutput_chromId_003_4_0013	CallGenome	complete	0	2020-03-20T13:17:28.678234Z
+callGenomeSegment_chromId_003_4_0014	CallGenome	complete	0	2020-03-20T13:17:27.948415Z
+compressSegmentOutput_chromId_003_4_0014	CallGenome	complete	0	2020-03-20T13:17:28.034031Z
+callGenomeSegment_chromId_003_4_0015	CallGenome	complete	0	2020-03-20T13:17:28.517352Z
+compressSegmentOutput_chromId_003_4_0015	CallGenome	complete	0	2020-03-20T13:17:28.675658Z
+completedAllGenomeSegments	CallGenome	complete	0	2020-03-20T13:17:32.023867Z
+SNV_concat_vcf	CallGenome	complete	0	2020-03-20T13:17:32.079412Z
+SNV_index_vcf	CallGenome	complete	0	2020-03-20T13:17:32.153103Z
+Indel_concat_vcf	CallGenome	complete	0	2020-03-20T13:17:32.078025Z
+Indel_index_vcf	CallGenome	complete	0	2020-03-20T13:17:32.156473Z
+mergeRunStats	CallGenome	complete	0	2020-03-20T13:17:32.068883Z
+removeTmpDir	CallGenome	complete	0	2020-03-20T13:17:32.225973Z

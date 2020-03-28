@@ -6,7 +6,7 @@ approach to do the calling
 Here we will try 3 variant callers:
 
 * `Varscan`
-* `MuTecT`
+* `MuTect`
 * `Strelka`
 
 Other candidates:
@@ -14,7 +14,7 @@ Other candidates:
 * `Virmid`
 * `Somatic sniper`
 
-Many, MANY others can be found here: https://www.biostars.org/p/19104/
+Many, MANY others can be found [here](https://www.biostars.org/p/19104/)
 
 In our case, let’s create a new work directory to start wit:
 
@@ -54,7 +54,7 @@ Notes on `samtools` arguments:
   > **-g**: generate genotype likelihoods in BCF format
 
 ```bash
-$ java -Xmx2G -jar /usr/local/bin/VarScan.jar \
+java -Xmx2G -jar /usr/local/bin/VarScan.jar \
 somatic variant_calling/normal.mpileup \
 variant_calling/tumour.mpileup \
 variant_calling/varscan \
@@ -69,13 +69,18 @@ variant_calling/varscan \
 Now let’s try a different variant caller, `MuTect`.
 
 ```bash
-$ gatk Mutect2 \
+gatk Mutect2 \
 -R ref/human_g1k_v37.fasta \
 -I alignment/normal/normal.sorted.dup.recal.bam \
 -I alignment/tumour/tumour.sorted.dup.recal.bam \
 -normal Blood \
--O variant_calling/mutect.vcf \
+-O variant_calling/mutect.vcf.gz \
 -L 4:1-100000
+
+gatk FilterMutectCalls \
+-R ref/human_g1k_v37.fasta \
+-V variant_calling/mutect.vcf.gz \
+-O variant_calling/mutect.filtered.vcf.gz
 ```
 
 

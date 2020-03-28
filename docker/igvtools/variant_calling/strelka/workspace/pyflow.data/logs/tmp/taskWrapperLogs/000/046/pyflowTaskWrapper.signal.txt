@@ -1,0 +1,4 @@
+[2020-03-20T13:17:32.046135Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] wrapperStart
+[2020-03-20T13:17:32.053084Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] taskStart
+[2020-03-20T13:17:32.057075Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] taskExitCode 0
+[2020-03-20T13:17:32.059427Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] taskElapsedSec 0

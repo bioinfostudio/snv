@@ -1,0 +1,108 @@
+[2020-03-20T13:17:26.585593Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_makeTmpDir] Task: 'getChromDepth_makeTmpDir' exit code: '0'
+[2020-03-20T13:17:26.587734Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_makeTmpDir] Task: 'getChromDepth_makeTmpDir' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:26.631602Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_sample000_makeTmpDir] Task: 'getChromDepth_sample000_makeTmpDir' exit code: '0'
+[2020-03-20T13:17:26.633784Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_sample000_makeTmpDir] Task: 'getChromDepth_sample000_makeTmpDir' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.329859Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_sample000_estimateChromDepth_003_4] Task: 'getChromDepth_sample000_estimateChromDepth_003_4' exit code: '0'
+[2020-03-20T13:17:27.332065Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_sample000_estimateChromDepth_003_4] Task: 'getChromDepth_sample000_estimateChromDepth_003_4' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.403529Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_sample000_catChromDepth] Task: 'getChromDepth_sample000_catChromDepth' exit code: '0'
+[2020-03-20T13:17:27.405760Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_sample000_catChromDepth] Task: 'getChromDepth_sample000_catChromDepth' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.477521Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_mergeChromDepth] Task: 'getChromDepth_mergeChromDepth' exit code: '0'
+[2020-03-20T13:17:27.479699Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_mergeChromDepth] Task: 'getChromDepth_mergeChromDepth' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.547472Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_removeTmpDir] Task: 'getChromDepth_removeTmpDir' exit code: '0'
+[2020-03-20T13:17:27.549872Z] [507da9be055a] [68_1] [pyflowTaskWrapper:getChromDepth_removeTmpDir] Task: 'getChromDepth_removeTmpDir' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.563471Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+makeTmpDir] Task: 'CallGenome+makeTmpDir' exit code: '0'
+[2020-03-20T13:17:27.565690Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+makeTmpDir] Task: 'CallGenome+makeTmpDir' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.632081Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0001] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.634103Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0004] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.650100Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0008] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.650307Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0007] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.729356Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0004] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0004' exit code: '0'
+[2020-03-20T13:17:27.730635Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0001] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0001' exit code: '0'
+[2020-03-20T13:17:27.732111Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0004] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0004' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.734729Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0008] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0008' exit code: '0'
+[2020-03-20T13:17:27.736606Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0008] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0008' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.736681Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0001] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0001' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.749952Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0007] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0007' exit code: '0'
+[2020-03-20T13:17:27.751936Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0007] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0007' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.841508Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0005] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.841808Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0014] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.841943Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0007] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0007' exit code: '0'
+[2020-03-20T13:17:27.843888Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0007] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0007' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.850207Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0004] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0004' exit code: '0'
+[2020-03-20T13:17:27.852201Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0004] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0004' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.912882Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0009] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.925122Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0001] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0001' exit code: '0'
+[2020-03-20T13:17:27.927361Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0001] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0001' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.929524Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0014] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0014' exit code: '0'
+[2020-03-20T13:17:27.930352Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0005] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0005' exit code: '0'
+[2020-03-20T13:17:27.933065Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0014] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0014' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.933996Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0005] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0005' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:27.990043Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0000] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:27.992469Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0005] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0005' exit code: '0'
+[2020-03-20T13:17:27.995737Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0005] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0005' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.007973Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0009] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0009' exit code: '0'
+[2020-03-20T13:17:28.010502Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0009] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0009' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.011413Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0014] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0014' exit code: '0'
+[2020-03-20T13:17:28.014524Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0014] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0014' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.075136Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0006] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.093039Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0013] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.109607Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0011] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.146160Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0006] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0006' exit code: '0'
+[2020-03-20T13:17:28.148056Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0006] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0006' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.177847Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0013] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0013' exit code: '0'
+[2020-03-20T13:17:28.179816Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0013] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0013' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.196581Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0011] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0011' exit code: '0'
+[2020-03-20T13:17:28.199399Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0011] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0011' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.205853Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0003] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.260412Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0008] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0008' exit code: '0'
+[2020-03-20T13:17:28.262247Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0008] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0008' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.270255Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0006] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0006' exit code: '0'
+[2020-03-20T13:17:28.271936Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0006] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0006' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.283396Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0003] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0003' exit code: '0'
+[2020-03-20T13:17:28.285285Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0003] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0003' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.337751Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0002] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.349932Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0011] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0011' exit code: '0'
+[2020-03-20T13:17:28.352441Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0011] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0011' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.355098Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0003] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0003' exit code: '0'
+[2020-03-20T13:17:28.357331Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0003] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0003' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.418137Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0010] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.424160Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0002] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0002' exit code: '0'
+[2020-03-20T13:17:28.426362Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0002] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0002' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.427658Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0015] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.504484Z] [507da9be055a] [68_1] [CallGenome+callGenomeSegment_chromId_003_4_0012] WARNING: theta parameter file was not given. Using internal theta values.
+[2020-03-20T13:17:28.505047Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0010] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0010' exit code: '0'
+[2020-03-20T13:17:28.505073Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0015] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0015' exit code: '0'
+[2020-03-20T13:17:28.507812Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0015] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0015' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.507826Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0010] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0010' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.559537Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0010] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0010' exit code: '0'
+[2020-03-20T13:17:28.562096Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0010] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0010' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.568375Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0009] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0009' exit code: '0'
+[2020-03-20T13:17:28.570459Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0009] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0009' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.584143Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0012] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0012' exit code: '0'
+[2020-03-20T13:17:28.586106Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0012] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0012' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.637517Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0013] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0013' exit code: '0'
+[2020-03-20T13:17:28.639470Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0015] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0015' exit code: '0'
+[2020-03-20T13:17:28.640460Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0013] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0013' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.642976Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0015] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0015' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.644691Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0012] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0012' exit code: '0'
+[2020-03-20T13:17:28.646546Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0012] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0012' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:28.712425Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0002] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0002' exit code: '0'
+[2020-03-20T13:17:28.714426Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0002] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0002' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:31.857114Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0000] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0000' exit code: '0'
+[2020-03-20T13:17:31.859354Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_003_4_0000] Task: 'CallGenome+callGenomeSegment_chromId_003_4_0000' complete. elapsedSec: 3 elapsedCoreSec: 3
+[2020-03-20T13:17:31.932153Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+fixVcfHeader_chromId_003_4_0000] Task: 'CallGenome+fixVcfHeader_chromId_003_4_0000' exit code: '0'
+[2020-03-20T13:17:31.934324Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+fixVcfHeader_chromId_003_4_0000] Task: 'CallGenome+fixVcfHeader_chromId_003_4_0000' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:31.983826Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0000] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0000' exit code: '0'
+[2020-03-20T13:17:31.986374Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+compressSegmentOutput_chromId_003_4_0000] Task: 'CallGenome+compressSegmentOutput_chromId_003_4_0000' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:32.058431Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] Task: 'CallGenome+mergeRunStats' exit code: '0'
+[2020-03-20T13:17:32.060359Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] Task: 'CallGenome+mergeRunStats' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:32.063231Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_concat_vcf] Task: 'CallGenome+Indel_concat_vcf' exit code: '0'
+[2020-03-20T13:17:32.066039Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_concat_vcf] Task: 'CallGenome+Indel_concat_vcf' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:32.070331Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_concat_vcf] Task: 'CallGenome+SNV_concat_vcf' exit code: '0'
+[2020-03-20T13:17:32.072656Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_concat_vcf] Task: 'CallGenome+SNV_concat_vcf' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:32.113304Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_index_vcf] Task: 'CallGenome+Indel_index_vcf' exit code: '0'
+[2020-03-20T13:17:32.114156Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] Task: 'CallGenome+SNV_index_vcf' exit code: '0'
+[2020-03-20T13:17:32.116895Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_index_vcf] Task: 'CallGenome+Indel_index_vcf' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:32.117800Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] Task: 'CallGenome+SNV_index_vcf' complete. elapsedSec: 0 elapsedCoreSec: 0
+[2020-03-20T13:17:32.189808Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] Task: 'CallGenome+removeTmpDir' exit code: '0'
+[2020-03-20T13:17:32.192009Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] Task: 'CallGenome+removeTmpDir' complete. elapsedSec: 0 elapsedCoreSec: 0

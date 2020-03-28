@@ -4,8 +4,8 @@ Now we have variants from all three methods. Let’s compress and index
 the VCFs for future visualisation.
 
 ```bash
-for i in variant_calling/*.vcf; do bgzip -c $i > $i.gz ; tabix -p vcf $i.gz; done
-tabix -p vcf variant_calling/strelka.vcf.gz
+for i in variant_calling/*.vcf; do bgzip $i; done
+for i in variant_calling/*.vcf.gz; do tabix -p vcf $i; done
 ```
 
 Let’s look at a compressed VCF. Details on the VCF spec can be found [here](https://vcftools.github.io/specs.html).
@@ -27,22 +27,18 @@ Note on VCF fields:
   > **GQ**: Genotype Quality  
 
 
-!!! note "Question"
-    Looking at the three vcf files, how can we detect only somatic variants?
+## Looking at the three vcf files, how can we detect only somatic variants?
 
-    !!! success ""
-        ??? "**Answer**"
+Some commands to find somatic variant in the vcf file:
 
-            Some commands to find somatic variant in the vcf file:
+varscan:
 
-            varscan:
+    zcat variant_calling/varscan.snp.vcf.gz | grep -v "^#" | grep SOMATIC
 
-                grep SOMATIC variant_calling/varscan.snp.vcf
+MuTecT:
 
-            MuTecT:
+    zcat variant_calling/mutect.filtered.vcf.gz | grep -v "^#"
 
-                grep -v "^#" variant_calling/mutect.vcf
+Strelka:
 
-            Strelka:
-
-                zcat variant_calling/strelka.vcf.gz | grep -v "^#"
+    zcat variant_calling/strelka.vcf.gz | grep -v "^#"

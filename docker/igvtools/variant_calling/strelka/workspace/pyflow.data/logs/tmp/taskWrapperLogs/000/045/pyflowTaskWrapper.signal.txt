@@ -1,0 +1,4 @@
+[2020-03-20T13:17:32.100022Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_index_vcf] [wrapperSignal] wrapperStart
+[2020-03-20T13:17:32.107431Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_index_vcf] [wrapperSignal] taskStart
+[2020-03-20T13:17:32.111785Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_index_vcf] [wrapperSignal] taskExitCode 0
+[2020-03-20T13:17:32.115130Z] [507da9be055a] [68_1] [pyflowTaskWrapper:CallGenome+Indel_index_vcf] [wrapperSignal] taskElapsedSec 0
