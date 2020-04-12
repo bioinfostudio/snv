@@ -41,7 +41,7 @@ groups:
             {% include "markdowns/01_introduction.md" %}
     -
         type: InlineMultiQuestion
-        id: flags 
+        id: flags
         cid: snv
         value: 15
         title: SAM flags
@@ -64,27 +64,27 @@ groups:
             choice1:
                 type: ChoicesAnswer
                 choices:
-                - ~CORRECT~ read paired, second in pair  
-                - read paired, mate reverse strand, second in pair  
-                - read paired, read reverse strand, mate reverse strand, first in pair  
+                - ~CORRECT~ read paired, second in pair
+                - read paired, mate reverse strand, second in pair
+                - read paired, read reverse strand, mate reverse strand, first in pair
 
             choice2:
                 type: ChoicesAnswer
                 choices:
-                - read paired, second in pair  
-                - read paired, mate reverse strand, second in pair  
-                - ~CORRECT~ read paired, read reverse strand, mate reverse strand, first in pair  
+                - read paired, second in pair
+                - read paired, mate reverse strand, second in pair
+                - ~CORRECT~ read paired, read reverse strand, mate reverse strand, first in pair
 
             choice3:
                 type: ChoicesAnswer
                 choices:
-                - read paired, second in pair  
-                - ~CORRECT~ read paired, mate reverse strand, second in pair  
-                - read paired, read reverse strand, mate reverse strand, first in pair  
+                - read paired, second in pair
+                - ~CORRECT~ read paired, mate reverse strand, second in pair
+                - read paired, read reverse strand, mate reverse strand, first in pair
     -
         type: InlineMultiQuestion
-        id: mate 
-        cid: snv 
+        id: mate
+        cid: snv
         value: 10
         title: Find mate pair
         prompt: |
@@ -109,15 +109,15 @@ groups:
                 required: True
                 hint: |
                     a)  Instead of using <b>head</b>, what unix command could we pipe the output to?
-                    b)  Once we’ve found both reads, the command can be stopped by typing <b>CTRL-C</b>  
+                    b)  Once we’ve found both reads, the command can be stopped by typing <b>CTRL-C</b>
                 correct_answer:
                 - <plain> grep
     -
         type: InlineMultiQuestion
-        id: cigar 
-        cid: snv 
+        id: cigar
+        cid: snv
         value: 10
-        title: CIGAR string 
+        title: CIGAR string
         prompt: |
 
             # CIGAR string
@@ -137,8 +137,8 @@ groups:
                 - hard
     -
         type: InlineMultiQuestion
-        id: aligner 
-        cid: snv 
+        id: aligner
+        cid: snv
         value: 10
         title: Alignment information
         prompt: |
@@ -163,9 +163,9 @@ groups:
     -
         type: InlineMultiQuestion
         id: samtools
-        cid: snv 
+        cid: snv
         value: 10
-        title: Mapped and unmapped reads 
+        title: Mapped and unmapped reads
         prompt: |
 
             # Mapped and unmapped reads
@@ -199,5 +199,6 @@ groups:
 
         answer_explanation: |
 
-            - Mapped    `samtools view -c -F4 alignment/normal/normal.sorted.bam`
-            - Unmapped  `samtools view -c -f4 alignment/normal/normal.sorted.bam`
+            - Mapped    samtools view -c -F4 alignment/normal/normal.sorted.bam
+            - Unmapped  samtools view -c -f4 alignment/normal/normal.sorted.bam
+
