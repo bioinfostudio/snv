@@ -44,14 +44,14 @@ groups:
             # Does the coverage fit with the expectation?
 
         choices:
-            - ~CORRECT~ Yes 
+            - ~CORRECT~ Yes
             - No
 
         answer_explanation: |
 
             * Yes the mean coverage of the region is >85x.
 
-            * `thresholds.bed.gz` is a useful function to see if your coverage is
+            * **thresholds.bed.gz** is a useful function to see if your coverage is
             uniform.
 
             * Another way is to compare the mean to the median. If both are quite
@@ -61,7 +61,7 @@ groups:
         id: insertsize
         cid: coverage
         value: 10
-        title: Insert Size 
+        title: Insert Size
         prompt: |
 
             {% include "markdowns/07_insert_size.md" %}
@@ -84,11 +84,11 @@ groups:
             choice2:
                 type: ChoicesAnswer
                 choices:
-                - tumour 
+                - tumour
                 - ~CORRECT~ normal
     -
         type: ChoiceQuestion
-        id: alignment 
+        id: alignment
         cid: insert
         value: 5
         title: Alignment metrics
@@ -99,14 +99,15 @@ groups:
             # Do you think the sample and the reference genome fit together?
 
         choices:
-            - ~CORRECT~ Yes 
+            - ~CORRECT~ Yes
             - No
 
         answer_explanation: |
 
-            Yes, 99% of the reads have been aligned.  
+            Yes, 99% of the reads have been aligned.
             Usually, we consider
 
             * A good alignment if > 85%
             * Reference assembly issues if [60-85]%
             * Probably a mismatch between sample and ref if < 60 %
+
