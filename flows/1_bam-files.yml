@@ -199,6 +199,6 @@ groups:
 
         answer_explanation: |
 
-            - Mapped    samtools view -c -F4 alignment/normal/normal.sorted.bam
-            - Unmapped  samtools view -c -f4 alignment/normal/normal.sorted.bam
+          - Mapped:    samtools view -c -F4 alignment/normal/normal.sorted.bam
+          - Unmapped:  samtools view -c -f4 alignment/normal/normal.sorted.bam
 
